@@ -1,4 +1,0 @@
-# Ducktech
-# Ducktech
-# Ducktech
-# Ducktech

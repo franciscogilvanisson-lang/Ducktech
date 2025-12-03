@@ -7,9 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* FONTES TECNOLÓGICAS */
+nav a, .btn {
+    font-family: 'Orbitron', sans-serif;
+}
+
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background: #0a1a3a;
     color: white;
     overflow-x: hidden;
@@ -139,16 +144,48 @@ h2 {
 }
 
 .card {
-    background: rgba(15, 39, 92, 0.45); /* Transparente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     padding: 30px;
     width: 280px;
+    height: 280px; /* deixa quadrado */
     border-radius: 12px;
-    backdrop-filter: blur(6px); /* efeito vidro */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    backdrop-filter: blur(4px);
     transition: 
         transform 0.4s ease,
         box-shadow 0.4s ease,
         background 0.4s ease;
+    position: relative;
+    overflow: hidden;
 }
+.card:hover .card-front {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.card-front {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 39, 92, 0.45);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* CENTRALIZA VERTICAL */
+    align-items: center;     /* CENTRALIZA HORIZONTAL */
+    text-align: center;      /* CENTRALIZA TEXTO */
+
+    transition: 0.4s ease;
+}
+
 
 .card:hover {
     background: rgba(0, 110, 255, 0.85); /* Azul bem forte no hover */
@@ -330,4 +367,87 @@ h2 {
     height: 50px;    /* DIMINUA AQUI */
     width: auto;
     object-fit: contain;
+}
+/* Conteúdo escondido */
+.card .info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+/* Esconder texto original */
+.card .title {
+    transition: 0.4s ease;
+}
+
+/* No hover, mostra a descrição */
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* No hover, esconde o título */
+.card:hover .title {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Botão Orçamento */
+.btn-orcamento {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #fff;
+    color: #003A85;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-orcamento:hover {
+    background: #69a9ff;
+    color: #0a1a3a;
+}
+/* Deixar os cards quadrados */
+.card {
+    width: 260px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Frente do card (título + ícone) */
+.card-front {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 39, 92, 0.45);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    font-size: 22px;
+    text-align: center;
+}
+
+.card .icon {
+    width: 60px;       /* tamanho do ícone */
+    height: 60px;      /* mantém proporcional */
+    object-fit: contain;
+    margin: 10px auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Ícone some quando passar o mouse */
+.card:hover .icon {
+    opacity: 0;
 }
