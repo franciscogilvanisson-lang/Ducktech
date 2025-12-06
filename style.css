@@ -711,10 +711,82 @@ h2 {
 .hero-card p {
     font-size: 20px;
     font-weight: 600;
-    text-align: center;         /* Centraliza textos */
-    display: flex;              /* Deixa tudo flexível */
-    flex-direction: column;     /* Um embaixo do outro */
-    justify-content: center;    /* Centraliza verticalmente */
-    align-items: center;        /* Centraliza horizontalmente */
+   
 
 }
+
+/* ===== RESPONSIVIDADE DO HERO ===== */
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto;
+        padding: 120px 30px 60px;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-sub {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* CARDS ficam lado a lado */
+    .hero-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .hero-card {
+        width: 45%;
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+/* Celulares pequenos (480px) */
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 140px 20px 50px;
+    }
+
+    .hero-left h1 {
+        font-size: 30px;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    /* 3 cards um embaixo do outro */
+    .hero-right {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-card {
+        width: 85%;
+        padding: 18px;
+    }
+}
+
