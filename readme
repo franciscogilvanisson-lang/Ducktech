@@ -1,0 +1,53 @@
+#DuckTech
+
+DuckTech é uma landing page moderna desenvolvida para apresentar serviços de manutenção e suporte técnico em computadores.
+O site foi projetado com foco em desempenho, experiência do usuário e visual futurista, utilizando efeitos interativos e uma interface totalmente responsiva.
+
+#Tecnologias Utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Font Awesome (ícones)
+
+Canvas para partículas animadas
+
+Formulário integrado via Formspree
+
+GitHub Pages para hospedagem
+
+Funcionalidades
+
+Layout totalmente responsivo para desktop, tablet e mobile
+
+Animações suaves com efeitos de rolagem
+
+Cards interativos para cada serviço
+
+Botões de acesso rápido ao WhatsApp
+
+Sessão de contato com formulário funcional
+
+Efeito de partículas em background
+
+Navegação simples e intuitiva
+
+#Seções do Site
+#Hero#
+
+Apresentação principal com título, descrição e botões de ação.
+
+#Serviços#
+
+Cards animados com ícones, descrições e link direto para orçamento via WhatsApp.
+
+#Contato#
+
+Informações de contato, horários e formulário funcional conectado ao Formspree.
+
+#Objetivo do Projeto#
+
+Este projeto foi criado para demonstrar habilidades em desenvolvimento front-end, design responsivo e criação de interfaces modernas, podendo ser utilizado como material de portfólio ou base para sites comerciais de tecnologia.

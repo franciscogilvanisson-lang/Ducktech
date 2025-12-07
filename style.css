@@ -7,8 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* FONTES TECNOLÓGICAS */
-nav a, .btn {
+nav a,
+.btn {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -68,9 +70,12 @@ nav a {
     text-decoration: none;
     color: #fff;
     transition: 0.3s;
-    font-size: 20px; /* AUMENTA AS LETRAS DO MENU */
-    font-weight: 600; /* (Opcional) deixa mais bonito */
-    line-height: 50px; /* igual à altura do logo */
+    font-size: 20px;
+    /* AUMENTA AS LETRAS DO MENU */
+    font-weight: 600;
+    /* (Opcional) deixa mais bonito */
+    line-height: 50px;
+    /* igual à altura do logo */
 
 }
 
@@ -78,8 +83,10 @@ nav a {
 nav a:hover {
     color: #69a9ff;
 }
+
 .logo img {
-    height: 50px; /* Ajuste o tamanho para combinar com o header */
+    height: 50px;
+    /* Ajuste o tamanho para combinar com o header */
     width: auto;
     transition: transform 0.25s ease;
 }
@@ -150,7 +157,8 @@ h2 {
 
     padding: 30px;
     width: 280px;
-    height: 280px; /* deixa quadrado */
+    height: 280px;
+    /* deixa quadrado */
     border-radius: 12px;
 
     display: flex;
@@ -158,13 +166,14 @@ h2 {
     justify-content: flex-end;
 
     backdrop-filter: blur(4px);
-    transition: 
+    transition:
         transform 0.4s ease,
         box-shadow 0.4s ease,
         background 0.4s ease;
     position: relative;
     overflow: hidden;
 }
+
 .card:hover .card-front {
     opacity: 0;
     transform: scale(1.1);
@@ -179,9 +188,12 @@ h2 {
 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* CENTRALIZA VERTICAL */
-    align-items: center;     /* CENTRALIZA HORIZONTAL */
-    text-align: center;      /* CENTRALIZA TEXTO */
+    justify-content: center;
+    /* CENTRALIZA VERTICAL */
+    align-items: center;
+    /* CENTRALIZA HORIZONTAL */
+    text-align: center;
+    /* CENTRALIZA TEXTO */
 
     transition: 0.4s ease;
     padding: 0 25px;
@@ -190,9 +202,11 @@ h2 {
 
 
 .card:hover {
-    background: rgba(0, 110, 255, 0.85); /* Azul bem forte no hover */
+    background: rgba(0, 110, 255, 0.85);
+    /* Azul bem forte no hover */
     transform: scale(1.10);
-    box-shadow: 0 12px 30px rgba(0, 110, 255, 0.6); /* brilho mais intenso */
+    box-shadow: 0 12px 30px rgba(0, 110, 255, 0.6);
+    /* brilho mais intenso */
     z-index: 5;
     position: relative;
 }
@@ -349,6 +363,7 @@ h2 {
         padding: 60px 20px;
     }
 }
+
 /* Vídeo no fundo da área de serviços */
 .services {
     position: relative;
@@ -363,13 +378,17 @@ h2 {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.20; /* 0.20 = bem sutil, pode aumentar */
+    opacity: 0.20;
+    /* 0.20 = bem sutil, pode aumentar */
 }
+
 .logo img {
-    height: 50px;    /* DIMINUA AQUI */
+    height: 50px;
+    /* DIMINUA AQUI */
     width: auto;
     object-fit: contain;
 }
+
 /* Conteúdo escondido */
 .card .info {
     opacity: 0;
@@ -414,6 +433,7 @@ h2 {
     background: #69a9ff;
     color: #0a1a3a;
 }
+
 /* Deixar os cards quadrados */
 .card {
     width: 260px;
@@ -443,8 +463,10 @@ h2 {
 }
 
 .card .icon {
-    width: 60px;       /* tamanho do ícone */
-    height: 60px;      /* mantém proporcional */
+    width: 60px;
+    /* tamanho do ícone */
+    height: 60px;
+    /* mantém proporcional */
     object-fit: contain;
     margin: 10px auto;
     display: block;
@@ -461,170 +483,175 @@ h2 {
 /* ============================== */
 
 .contact {
-  padding: 80px 50px;
-  background: linear-gradient(180deg, rgba(3,18,48,0.8), rgba(5,25,64,0.95));
-  color: #fff;
+    padding: 80px 50px;
+    background: linear-gradient(180deg, rgba(3, 18, 48, 0.8), rgba(5, 25, 64, 0.95));
+    color: #fff;
 }
 
 .contact-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 480px;
-  gap: 40px;
-  align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 40px;
+    align-items: start;
 }
 
 /* left column */
 .contact-left h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .contact-sub {
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 24px;
 }
 
 /* small cards */
 .contact-cards {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
 }
 
 .c-card {
-  background: rgba(255,255,255,0.04);
-  padding: 16px;
-  border-radius: 10px;
-  width: calc(33.333% - 12px);
-  min-width: 160px;
-  text-align: center;
-  backdrop-filter: blur(4px);
-  transition: transform .25s ease, box-shadow .25s ease;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 16px;
+    border-radius: 10px;
+    width: calc(33.333% - 12px);
+    min-width: 160px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .c-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .c-icon {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 8px;
-  display: inline-block;
-  object-fit: contain;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 8px;
+    display: inline-block;
+    object-fit: contain;
 }
 
 .c-card h3 {
-  font-size: 16px;
-  margin-bottom: 6px;
+    font-size: 16px;
+    margin-bottom: 6px;
 }
 
 .contact-link {
-  color: #bfe2ff;
-  text-decoration: none;
+    color: #bfe2ff;
+    text-decoration: none;
 }
 
 .btn-whatsapp {
-  display: inline-block;
-  margin-top: 6px;
-  background: #22c55e;
-  color: #05203a;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background .2s ease, transform .12s ease;
+    display: inline-block;
+    margin-top: 6px;
+    background: #22c55e;
+    color: #05203a;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .2s ease, transform .12s ease;
 }
 
 .btn-whatsapp:hover {
-  background: #16a34a;
-  transform: translateY(-3px);
+    background: #16a34a;
+    transform: translateY(-3px);
 }
 
 /* right column (form) */
 .contact-form {
-  background: rgba(255,255,255,0.03);
-  padding: 18px;
-  border-radius: 12px;
-  backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
 }
 
 .contact-form label {
-  display: block;
-  margin-bottom: 12px;
-  color: #e6f4ff;
+    display: block;
+    margin-bottom: 12px;
+    color: #e6f4ff;
 }
 
 .contact-form label span {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.02);
-  color: #fff;
-  outline: none;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #fff;
+    outline: none;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: rgba(105,169,255,0.9);
-  box-shadow: 0 6px 18px rgba(105,169,255,0.07);
+    border-color: rgba(105, 169, 255, 0.9);
+    box-shadow: 0 6px 18px rgba(105, 169, 255, 0.07);
 }
 
 .form-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .btn {
-  padding: 10px 16px;
-  background: #69a9ff;
-  color: #05203a;
-  border: none;
-  border-radius: 8px;
-  font-weight: 700;
-  cursor: pointer;
+    padding: 10px 16px;
+    background: #69a9ff;
+    color: #05203a;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .btn-alt {
-  background: rgba(255,255,255,0.06);
-  color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
 }
 
 /* small screens */
 @media (max-width: 900px) {
-  .contact-inner {
-    grid-template-columns: 1fr;
-  }
-  .c-card {
-    width: calc(50% - 12px);
-  }
+    .contact-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .c-card {
+        width: calc(50% - 12px);
+    }
 }
 
 @media (max-width: 480px) {
-  .c-card {
-    width: 100%;
-  }
-  nav a {
-    font-size: 16px;
-  }
-  .contact-left, .contact-right {
-    width: 100%;
-  }
+    .c-card {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
 }
+
 /* ===== HERO LAYOUT NOVO ===== */
 
 .hero {
@@ -684,7 +711,7 @@ h2 {
 }
 
 .hero-card {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     padding: 20px 25px;
     border-radius: 12px;
     backdrop-filter: blur(6px);
@@ -693,13 +720,13 @@ h2 {
     align-items: center;
     gap: 15px;
     transition: 0.3s ease;
-   margin-right: 50px;
-  
+    margin-right: 50px;
+
 }
 
 .hero-card:hover {
     transform: translateX(10px);
-    background: rgba(0,110,255,0.4);
+    background: rgba(0, 110, 255, 0.4);
 }
 
 .hero-card img {
@@ -711,7 +738,7 @@ h2 {
 .hero-card p {
     font-size: 20px;
     font-weight: 600;
-   
+
 
 }
 
@@ -789,4 +816,25 @@ h2 {
         padding: 18px;
     }
 }
+input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+/* Desativa seleção de texto no site inteiro */
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
+
+.watermark {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    opacity: 0.4;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    user-select: none;
+}
